@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-/* import styles from './Header.module.css'; */
+import styles from './Header.module.css';
 
 const HeaderStyle = {
 	backgroundColor: '#6aa84f',
@@ -7,10 +7,11 @@ const HeaderStyle = {
 	height: '20%'
 };
 
+
 class Header extends Component {
 	render() {
 		return (
-			<div style={HeaderStyle}>Header</div>
+			<div className={styles.header} style={HeaderStyle}>Header</div>
 		)
 	}
 }
